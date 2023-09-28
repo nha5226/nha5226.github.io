@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Home</title>
     <style>
         body {
-            font-family: "Open Sans", sans-serif;
+            font-family: "Atkinson Hyperlegible", sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -16,18 +16,21 @@
             padding: 0;
             width: 100%;
             margin: 0; /* Abstand um die ul entfernen */
-            background: #000;
+            background: #ffffff;
+
         }
 
         li {
             display: table-cell;
             width: 100%;
             vertical-align: middle; /* Vertikale Ausrichtung auf middle */
-            line-height: 80px; /* Gleiche Höhe wie das Bild */
+            line-height: 70px; /* Gleiche Höhe wie das Bild */
+
+            font-size: 20px;
         }
 
         a {
-            color: #fff;
+            color: #414141;
             text-transform: uppercase;
             text-decoration: none;
             letter-spacing: 0.15em;
@@ -44,7 +47,7 @@
             height: 2px;
             left: 50%;
             position: absolute;
-            background: #fff;
+            background: #8f8f8f;
             transition: width 0.3s ease 0s, left 0.3s ease 0s;
             width: 0;
         }
@@ -61,16 +64,16 @@
         }
 
         .logo {
-            height: 80px;
+            height: 70px;
             position: relative;
             margin-left: 30px;
-            margin-top: 5px;
+            margin-top: 15px;
         }
 
         .container {
             position: relative;
             width: 100%;
-            background-color: #B2AFE5;
+            background-color: #e1e3fe;
         }
 
         .image {
@@ -85,14 +88,78 @@
             top: 10%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: #fff;
+            color: #321e48;
             text-align: center;
-            font-size: 60px;
+            font-size: 50px;
             padding: 10px;
             border-radius: 10px;
+            font-family: "Courier", monospace;
         }
 
+        .card {
+            width: 80%;
+            height: 700px;
+            margin-top: 80px;
+            top: 10%;
+            left: 10%;
+            position: relative;
+            padding: 20px; /* Fügt Platz für den Inhalt hinzu */
+            overflow: hidden; /* Verhindert, dass der Rahmen die Inhalte verdeckt */
+            background-color: #fff; /* Hintergrundfarbe der "Card" */
+        }
 
+        .card::before,
+        .card::after {
+            content: "";
+            position: absolute;
+            border: 2px solid transparent; /* Transparenter Rahmenstil */
+            z-index: 1; /* Über den Inhalten, aber unter dem Text */
+        }
+
+        .card::before {
+            top: 0;
+            right: 0;
+            width: 50%; /* Breite bis zur Mitte der "Card" */
+            height: 50%; /* Höhe bis zur Mitte der "Card" */
+        }
+
+        .card::after {
+            bottom: 0;
+            left: 0;
+            width: 50%; /* Breite bis zur Mitte der "Card" */
+            height: 50%; /* Höhe bis zur Mitte der "Card" */
+        }
+
+        .cardheader {
+            color: #321e48;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: "Courier", monospace;
+            padding-left: 50px;
+            padding-top: 50px;
+            padding-right: 50px;
+        }
+
+        .cardtext1 {
+            font-family: "Atkinson Hyperlegible", sans-serif;
+            font-size: 35px;
+            padding-left: 100px;
+            padding-right: 100px;
+            text-align-all: center;
+            text-align: justify;
+        }
+
+        .cardtext2 {
+            font-family: "Atkinson Hyperlegible", sans-serif;
+            font-size: 22px;
+            padding-left: 100px;
+            padding-bottom: 50px;
+            padding-right: 100px;
+            text-align-all: center;
+            text-align: justify;
+            line-height: 2;
+        }
 
     </style>
 </head>
@@ -101,7 +168,7 @@
 <!-- Navigation Bar -->
 <div>
     <ul>
-        <li><img src="memoji.png" alt="Logo" class="logo"></li>
+        <li><img src="Logo.png" alt="Logo" class="logo"></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="#">Portfolio</a></li>
@@ -111,9 +178,29 @@
 </div>
 
 <div class="container">
-    <img src="room-girl-working-copy.gif" class="image">
-<!--    <img src="3DModellMeOnComputer.png" class="image">-->
-    <h1>Just your "Daily dose" of ME.</h1>
+    <div class="container">
+        <img src="3DModelME.png" class="image">
+        <h1>Just your "daily dose" of ME.</h1>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="card">
+        <p class="cardheader">
+            print("Hello World!")
+        </p>
+        <p class="cardtext1">
+            Herzlich willkommen auf meiner Webseite!
+        </p>
+        <p class="cardtext2">
+            Ich bin <strong> Nina Hartmann</strong>, eine enthusiastische Entdeckerin der faszinierenden Welt der Informatik an der <strong>Fachhochschule Vorarlberg</strong>.
+            Wenn ich Ihr Interesse geweckt haben, lade
+            ich Sie ein, auf den bezaubernden "About" Button oben zu klicken um mehr über meine einzigartige Reise zu erfahren. Gemeinsam
+            werden wir in die Tiefen meines Abenteuers eintauchen und die Magie der
+            Informationstechnologie entdecken.
+        </p>
+    </div>
 </div>
 
 </body>
