@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <style>
+
+        body {
+            font-family: "Atkinson Hyperlegible", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navebar */
+        ul {
+            border-radius: 8px;
+            padding: 0;
+            width: 100%;
+            margin: 0;
+            background: #ffffff;
+
+        }
+
+        li {
+            display: table-cell;
+            width: 100%;
+            vertical-align: middle;
+            line-height: 70px;
+
+            font-size: 20px;
+        }
+
+        .a {
+            color: #414141;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.15em;
+            display: inline-block;
+            padding: 15px 20px;
+            position: relative;
+        }
+
+        .a:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 30px;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #8f8f8f;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+
+        .a:hover:after {
+            width: 100%;
+            left: 0;
+        }
+
+        @media screen and (max-height: 300px) {
+            ul {
+                margin-top: 40px;
+            }
+        }
+
+        .logo {
+            height: 70px;
+            position: relative;
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+
+        .image {
+            width: 60%;
+            height: auto;
+
+        }
+
+        table {
+            background-color: #e1e3fe;
+            margin: 0 auto;
+            padding: 50px;
+            margin-top: 50px;
+            width: 80%;
+        }
+
+        .img {
+            width: 20px;
+            margin-right: 10px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div>
+    <ul>
+        <li><img src="Logo.png" alt="Logo" class="logo"></li>
+        <li><a href="index.html" class="a">Home</a></li>
+        <li><a href="cv.html" class="a">About</a></li>
+        <li><a href="contact.html" class="a">Contact</a></li>
+    </ul>
+</div>
+
+<div>
+
+    <table>
+        <tr>
+            <td>
+                <img src="memoji.png" alt="contact" class="image">
+            </td>
+            <td>
+                <h1>Kontakt</h1>
+                <p>Nina Hartmann</p>
+                <p> <img src="phone-call.png" class="img">Telefon: +43 664 2407080</p>
+                <p> <img src="email.png" class="img">E-Mail:  ninahartmann2014@gmail.com </p>
+                <p> <img src="linkedinsmall.png" class="img">LinkedIn: <a href="www.linkedin.com/in/nha5226">www.linkedin.com/in/nha5226</a></p>
+            </td>
+
+        </tr>
+    </table>
+
+
+
+</div>
+
+
+</body>
+</html>

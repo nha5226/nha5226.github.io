@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>About</title>
+    <link rel="icon" href="Logo.png" type="image/x-icon">
     <style>
         body {
             font-family: "Atkinson Hyperlegible", sans-serif;
@@ -95,21 +96,117 @@
 
         }
 
-        .slice{
+        .slice {
             width: 60%;
             height: 3px;
             background-color: #e1e3fe;
             margin-top: -15px;
         }
 
-        p{
+        p {
             line-height: 25px;
+            text-align-all: center;
+            text-align: justify;
         }
 
-        .backgroundimage{
+        .backgroundimage {
             background-image: url('pngwing.com.png');
             background-size: cover;
         }
+        .lastbox {
+            width: 100%;
+            height: 150px;
+            background: #e1e3fe;
+        }
+
+        .logoend {
+            height: 50px;
+        }
+
+        .logodown {
+            height: 50px;
+            margin-left: 100px;
+
+        }
+
+        .background-white {
+            height: 50px;
+            width: 50px;
+            border-radius: 96px;
+            background: #ffffff;
+        }
+
+        /* for all social containers*/
+        .socialContainer {
+            width: 52px;
+            height: 52px;
+            background-color: rgb(44, 44, 44);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition-duration: .3s;
+        }
+
+        /* instagram*/
+        .containerOne:hover {
+            background-color: #d62976;
+            transition-duration: .3s;
+        }
+
+        /* twitter*/
+        .containerTwo:hover {
+            background-color: #114cd9;
+            transition-duration: .3s;
+        }
+
+        /* linkdin*/
+        .containerThree:hover {
+            background-color: #0072b1;
+            transition-duration: .3s;
+        }
+
+        /* Whatsapp*/
+        .containerFour:hover {
+            background-color: #128C7E;
+            transition-duration: .3s;
+        }
+
+        .socialContainer:active {
+            transform: scale(0.9);
+            transition-duration: .3s;
+        }
+
+        .socialSvg {
+            width: 17px;
+        }
+
+        .socialSvg path {
+            fill: rgb(250, 249, 249);
+        }
+
+        .socialContainer:hover .socialSvg {
+            animation: slide-in-top 0.3s both;
+        }
+
+        @keyframes slide-in-top {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .table {
+            width: 100%;
+            height: 100%;
+        }
+
+
 
     </style>
 
@@ -121,7 +218,6 @@
         <li><img src="Logo.png" alt="Logo" class="logo"></li>
         <li><a href="index.html" class="a">Home</a></li>
         <li><a href="cv.html" class="a">About</a></li>
-        <li><a href="#" class="a">Blog</a></li>
         <li><a href="#" class="a">Contact</a></li>
     </ul>
 </div>
@@ -200,7 +296,7 @@
 </div>
 
 
-<div class="container backgroundimage" >
+<div class="container backgroundimage">
     <div class="whitebackgroundright">
         <table style="width: 100%; padding-left: 100px; padding-right: 100px">
             <tr>
@@ -338,5 +434,7 @@
         </table>
     </div>
 </div>
+
+
 </body>
 </html>
