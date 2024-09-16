@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="icon" href="Logo.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: "Atkinson Hyperlegible", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navebar */
+        .ul {
+            border-radius: 8px;
+            padding: 0;
+            width: 100%;
+            margin: 0; /* Abstand um die ul entfernen */
+            background: #ffffff;
+
+        }
+
+        .li {
+            display: table-cell;
+            width: 100%;
+            vertical-align: middle; /* Vertikale Ausrichtung auf middle */
+            line-height: 70px; /* Gleiche Höhe wie das Bild */
+            font-size: 20px;
+        }
+
+        .a {
+            color: #414141;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.15em;
+            display: inline-block;
+            padding: 15px 20px;
+            position: relative;
+        }
+
+        .a:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 30px;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #8f8f8f;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+
+        .a:hover:after {
+            width: 100%;
+            left: 0;
+        }
+
+        @media screen and (max-height: 300px) {
+            ul {
+                margin-top: 40px;
+            }
+        }
+
+        .logo {
+            height: 70px;
+            position: relative;
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+
+        /** SLICE **/
+
+        .slice {
+            width: 90%;
+            height: 2px;
+            background-color: #888888;
+            margin: 0 auto;
+        }
+
+
+        /** HEADLINE **/
+
+        .headline {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "Inter", sans-serif;
+            font-size: 40px;
+            margin-top: 50px;
+            color: #575757;
+        }
+
+        h2 {
+            color: #575757;
+        }
+
+
+        /** TEXT **/
+        p {
+            font-family: "Atkinson Hyperlegible", sans-serif;
+            text-align: justify;
+            font-size: 18px;
+        }
+
+        .li_text {
+            font-family: "Atkinson Hyperlegible", sans-serif;
+            text-align: justify;
+            font-size: 18px;
+        }
+
+
+        .container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /** INFO **/
+        table {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .td1 {
+            width: 60%;
+        }
+
+        .td_bild {
+            padding-left: 100px;
+            flex: 1;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<div>
+    <ul class="ul">
+        <li class="li"><img src="Logo.png" alt="Logo" class="logo"></li>
+        <li class="li"><a href="_index.html" class="a">Home</a></li>
+        <li class="li"><a href="_work_experience.html" class="a">Employment</a></li>
+        <li class="li"><a href="_education.html" class="a">Education</a></li>
+        <li class="li"><a href="_contact.html" class="a">Contact</a></li>
+    </ul>
+</div>
+
+
+<div>
+    <div class="container">
+        <h1 class="headline">Work Experience</h1>
+    </div>
+
+    <div class="slice"></div>
+
+    <table>
+
+        <tr>
+        <tr>
+            <td class="td1">
+                <h2> Liebherr </h2>
+
+                <table style="width: 100%;">
+                    <tr style="display: flex; justify-content: space-between;">
+                        <td style="text-align: left;">
+                            <p> Praktikum im Bereich Informatik </p>
+                        </td>
+                        <td style="text-align: right;">
+                            <p> 01.2024 - 04.2024 </p>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Meine Aufgaben:</h3>
+
+                <ul class="li_text">
+                    <li>Projektarbeit: Mitarbeit an einem bestehenden Softwareprojekt.</li>
+                    <li>Front-End-Entwicklung: Implementierung neuer Funktionen für die Benutzeroberfläche mit Angular
+                        und TypeScript.
+                    </li>
+                    <li>Front-End-Entwicklung: Implementierung neuer Funktionen für die Benutzeroberfläche mit Angular
+                        und TypeScript.
+                    </li>
+                    <li>Back-End-Entwicklung: Integration von Frontend-Funktionen mit dem Backend unter Verwendung von
+                        C# und Unity.
+                    </li>
+                    <li>Dokumentation: Erfassung und Dokumentation der erledigten Aufgaben.</li>
+                    <li>Teamarbeit: Zusammenarbeit mit dem internen Team und einer externen Firma zur Erreichung der
+                        Projektziele.
+                    </li>
+                </ul>
+
+            </td>
+            <td>
+                <img src="Work_Liebherr-Logo.png" class="td_bild" style="height: 50px"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="td1">
+                <h2> Infeo </h2>
+
+                <table style="width: 100%;">
+                    <tr style="display: flex; justify-content: space-between;">
+                        <td style="text-align: left;">
+                            <p> Ferialpraktikum im Bereich Informatik </p>
+                        </td>
+                        <td style="text-align: right;">
+                            <p> 07.2023 - 08.2023 </p>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <h3>Meine Aufgaben:</h3>
+
+                <ul class="li_text">
+                    <li>Projektarbeit: Mitarbeit an einem bestehenden Softwareprojekt</li>
+                    <li>Front-End-Entwicklung: Implementierung und Verbesserungen der Benutzeroberfläche mit Angular und
+                        Typescript.
+                    </li>
+                    <li>Front-End-Entwicklung: Implementierung neuer Funktionen für die Benutzeroberfläche mit Angular
+                        und TypeScript.
+                    </li>
+                    <li>Back-End-Entwicklung: Unterstützung bei der Entwicklung des Backend- Logik, sowie die
+                        Entwicklung neuer
+                        Funktionen in C#.
+                    </li>
+                </ul>
+
+            </td>
+            <td>
+                <img src="Work_infeo_logo.png" class="td_bild" style="height: 80px"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="td1">
+                <h2> Bitschnau Metallverarbeitung </h2>
+                <table style="width: 100%;">
+                    <tr style="display: flex; justify-content: space-between;">
+                        <td style="text-align: left;">
+                            <p> Bürokraft </p>
+                        </td>
+                        <td style="text-align: right;">
+                            <p> 08.2019 - 09.2019 </p>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+            <td>
+                <img src="Work_logo_bitschnau.png" class="td_bild" style="height: 50px"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="td1">
+                <h2> Propstei St. Gerold </h2>
+
+                <table style="width: 100%;">
+                    <tr style="display: flex; justify-content: space-between;">
+                        <td style="text-align: left;">
+                            <p> Servicekraft </p>
+                        </td>
+                        <td style="text-align: right;">
+                            <p> 08.2018 - 09.2018 </p>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+            <td>
+                <img src="Work_PropsteiStGerold.jpg" class="td_bild" style="height: 80px"/>
+            </td>
+        </tr>
+
+
+    </table>
+
+</div>
+
+
+</body>
+</html>

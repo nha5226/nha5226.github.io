@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <style>
+
+        body {
+            font-family: "Atkinson Hyperlegible", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navebar */
+        ul {
+            border-radius: 8px;
+            padding: 0;
+            width: 100%;
+            margin: 0;
+            background: #ffffff;
+
+        }
+
+        li {
+            display: table-cell;
+            width: 100%;
+            vertical-align: middle;
+            line-height: 70px;
+
+            font-size: 20px;
+        }
+
+        .a {
+            color: #414141;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.15em;
+            display: inline-block;
+            padding: 15px 20px;
+            position: relative;
+        }
+
+        .a:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 30px;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #8f8f8f;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+
+        .a:hover:after {
+            width: 100%;
+            left: 0;
+        }
+
+        @media screen and (max-height: 300px) {
+            ul {
+                margin-top: 40px;
+            }
+        }
+
+        .logo {
+            height: 70px;
+            position: relative;
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+
+        .image {
+            width: 50%;
+            height: auto;
+        }
+
+        .centered {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+
+        table {
+            margin: 0 auto;
+            padding: 50px;
+            margin-top: 50px;
+            width: 80%;
+        }
+
+        .img {
+            width: 20px;
+            margin-right: 10px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .background {
+            border-radius: 20px;
+            background: #ffffff;
+            box-shadow: 14px 14px 35px #c9c9c9,
+            -14px -14px 35px #ffffff;
+        }
+
+        .link {
+            color: #414141;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div>
+    <ul>
+        <li><img src="Logo.png" alt="Logo" class="logo"></li>
+        <li><a href="_index.html" class="a">Home</a></li>
+        <li><a href="_work_experience.html" class="a">Employment</a></li>
+        <li><a href="_education.html" class="a">Education</a></li>
+        <li><a href="_contact.html" class="a">Contact</a></li>
+    </ul>
+</div>
+
+<div>
+    <table class="background">
+        <tr>
+            <td class="centered">
+                <img src="memoji.png" alt="contact" class="image">
+            </td>
+            <td>
+                <h1>Kontakt</h1>
+                <p>Nina Hartmann</p>
+                <p><img src="Contact_Telefon.png" class="img">Telefon: +43 664 2407080</p>
+                <p><img src="Contact_Email.png" class="img">E-Mail: ninahartmann2014@gmail.com </p>
+                <p><img src="linkedinsmall.png" class="img">LinkedIn: <a href="https://www.linkedin.com/in/nha5226/"
+                                                                         class="link">www.linkedin.com/in/nha5226</a>
+                </p>
+                <p><img src="github-logo.png" class="img">GitHub: <a href="https://github.com/nha5226" class="link">www.github.com/nha5226</a>
+                </p>
+            </td>
+
+        </tr>
+    </table>
+</div>
+
+
+</body>
+</html>

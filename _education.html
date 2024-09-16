@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="icon" href="Logo.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: "Atkinson Hyperlegible", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navebar */
+        ul {
+            border-radius: 8px;
+            padding: 0;
+            width: 100%;
+            margin: 0; /* Abstand um die ul entfernen */
+            background: #ffffff;
+
+        }
+
+        li {
+            display: table-cell;
+            width: 100%;
+            vertical-align: middle; /* Vertikale Ausrichtung auf middle */
+            line-height: 70px; /* Gleiche Höhe wie das Bild */
+            font-size: 20px;
+        }
+
+        .a {
+            color: #414141;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.15em;
+            display: inline-block;
+            padding: 15px 20px;
+            position: relative;
+        }
+
+        .a:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 30px;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #8f8f8f;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+
+        .a:hover:after {
+            width: 100%;
+            left: 0;
+        }
+
+        @media screen and (max-height: 300px) {
+            ul {
+                margin-top: 40px;
+            }
+        }
+
+        .logo {
+            height: 70px;
+            position: relative;
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+
+
+        /** SLICE **/
+
+        .slice {
+            width: 90%;
+            height: 2px;
+            background-color: #888888;
+            margin: 0 auto ;
+        }
+
+        .slice_small {
+            width: 80%;
+            height: 2px;
+            background-color: #888888;
+            margin: 0 auto;
+        }
+
+
+        /** HEADLINE **/
+
+        .headline {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "Inter", sans-serif;
+            font-size: 40px;
+            margin-top: 50px;
+            color: #575757;
+        }
+
+        h2 {
+            color: #575757;
+        }
+
+
+        /** TEXT **/
+        p {
+            font-family: "Atkinson Hyperlegible", sans-serif;
+            text-align: justify;
+            font-size: 18px;
+        }
+
+
+        .container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /** INFO **/
+        table {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .info_td {
+            width: 50%;
+        }
+
+        .background_info {
+            width: 80%;
+            background-color: #f4f3f3;
+            margin: 50px auto 0 auto;
+
+        }
+
+        /** LINK **/
+
+        .link {
+            color: #414141;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        /** IMAGE **/
+
+        .bild_right {
+            padding-right: 50px;
+        }
+
+        .bild_left {
+            padding-left: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div>
+    <ul>
+        <li><img src="Logo.png" alt="Logo" class="logo"></li>
+        <li><a href="_index.html" class="a">Home</a></li>
+        <li><a href="_work_experience.html" class="a">Employment</a></li>
+        <li><a href="_education.html" class="a">Education</a></li>
+        <li><a href="_contact.html" class="a">Contact</a></li>
+    </ul>
+</div>
+
+<div>
+    <div class="container">
+        <h1 class="headline">Education</h1>
+    </div>
+    <div class="slice"></div>
+    <div>
+        <!-- FH -->
+        <div class="container">
+            <div class="background_info">
+                <table>
+                    <tr>
+                        <td class="info_td">
+                            <h2> FHV University of Applied Sciences </h2>
+                            <p> 2021 - 2024 </p>
+                            <p> Informatik - Software and Information Engeneering </p>
+                        </td>
+                        <td class="info_td">
+                            <img src="Education_FHV.png" style="height: 90px"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table>
+                <tr>
+                    <td>
+
+
+                        <table style="width: 100%">
+                            <tr>
+                                <td class="bild_right">
+                                    <p>
+                                        Während meines Informatikstudiums an der Fachhochschule Vorarlberg habe ich
+                                        erfolgreich den Bachelor of Science in Engineering erworben. Im Laufe meines
+                                        Studiums war ich an zahlreichen Projekten beteiligt, die es ermöglichten, sowohl
+                                        Teamarbeit als auch Führungsqualitäten zu entwickeln und zu verfeinern. Durch
+                                        die intensive Zusammenarbeit im Team kristallisierte sich meine jeweilige Rolle
+                                        in den Projekten klar heraus. Häufig übernahm ich die Rolle einer Teamplayerin,
+                                        probierte mich jedoch auch als Projektmanagerin aus. Dabei stellte ich fest,
+                                        dass ich sowohl operative Aufgaben als auch die Leitung des Teams übernehmen
+                                        möchte.
+                                    </p>
+                                    <p>
+                                        Im Laufe dieser Erfahrungen wurde mir bewusst, dass eine effektive Führung mehr
+                                        Ausbildung erfordert und ein starkes Verständnis für das „große Ganze“
+                                        voraussetzt.
+                                        Besonders genieße ich das gemeinschaftliche Programmieren, bei dem es darum
+                                        geht,
+                                        im Austausch mit anderen die bestmöglichen Lösungen zu finden und voneinander zu
+                                        lernen.
+                                    </p>
+                                    <p>
+                                        Neben der Rolle der Projektmanagerin übernahm ich häufig auch gestalterische
+                                        Aufgaben, insbesondere im Bereich Frontend-Design. Meine Leidenschaft für Design
+                                        führte dazu, dass ich oft von Kommilitonen zu Rate gezogen wurde. Die Arbeit mit
+                                        Tools wie Figma und die Umsetzung von Designs in Code bereiteten mir besonders
+                                        viel
+                                        Freude. Mein Interesse für das Frontend und die visuelle Gestaltung hat sich
+                                        dadurch
+                                        stark gefestigt. Einige meiner Projekte sind auf GitHub einsehbar und bieten
+                                        einen
+                                        tieferen Einblick in meine Arbeiten.
+                                    </p>
+                                </td>
+                                <td>
+                                    <img src="Education_Prototype.png" style="height: 400px"/>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <p>
+                            Meine Bachelorarbeit handelte sich um die Entwicklung eines 2D-Koop-Spiels, mit der
+                            Verwendung von Unreal Engine und Blueprints. Ich hatte viel Spaß bei der Entwicklung
+                            des Spiels und konnte dabei meine Kenntnisse in der Spieleentwicklung vertiefen.
+                        </p>
+                        <p> Im Spiel selber geht es um einen Jump-and-Run Charakter und einen Mouse-Only Charakter
+                            die zusammenarbeiten müssen, um das Spiel zu meistern. Die beiden Charaktere haben
+                            unterschiedliche Fähigkeiten, die sie im Spielverlauf einsetzen müssen, um Hindernisse
+                            wie zum Beispiel Gegner oder Schluchten mit Lava zu überwinden. Wenn man sich gerne noch
+                            mehr in die Entwicklung des Spiels einlesen will, kann das gerne auf meiner GitHub Seite
+                            tun.
+                        </p>
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="display: flex; align-items: center;">
+                                    <img src="github-logo.png" style="height: 20px; margin-right: 5px;"/>
+                                    <a href="https://github.com/nha5226" class="link">NinasGithub.at</a>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="slice_small"></div>
+
+        <!-- Häme -->
+        <div class="container">
+            <div class="background_info">
+                <table>
+                    <tr class="info">
+                        <td class="info_td">
+                            <h2> HAMK HÄME University of Applied Sciences </h2>
+                            <p> 08.2023 - 12.2023 </p>
+                            <p> Business Information Technology</p>
+                        </td>
+                        <td class="info_td">
+                            <img src="Education_HAMK-transformed.png" style="height: 120px"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <p>
+                            Im fünften Semester meines Studiums an der Fachhochschule Vorarlberg hatte ich die wertvolle
+                            Gelegenheit, ein Auslandssemester an der HAMK Häme University of Applied Sciences in
+                            Finnland zu
+                            absolvieren. Während dieses Semesters belegte ich unter anderem die Kurse "Cross-Platform
+                            Development"
+                            und "Mobile Programming Project", in denen wir in Teams an einem Projekt arbeiteten, um
+                            unsere
+                            Fähigkeiten in der Entwicklung mobiler Anwendungen weiter auszubauen.
+                        </p>
+                        <p>
+                            Ein weiterer Kurs, "Virtualization Techniques for Software Development", bot mir
+                            tiefergehende
+                            Einblicke
+                            in die Arbeit mit Docker, wobei wir praxisnah verschiedene Virtualisierungstechniken im
+                            Softwareentwicklungsprozess anwenden konnten.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td class="bild_right">
+                        <p>
+                            Im zweiten Halbjahr meines Auslandssemesters belegte ich das Fach "3D Modelling", in dem ich
+                            mithilfe von Blender 3D-Modelle erstellte. Diese Erfahrung war besonders spannend, da ich
+                            zuvor noch nie mit Blender gearbeitet hatte.
+                        </p>
+                        <p>
+                            Ich habe mich als erstens an mehreren Gebäudemodellen
+                            versucht, die für einen ersten Versuch recht gut gelungen sind. Am Ende des Kurses bestand
+                            unsere Aufgabe darin, ein eigenes Zimmer mit den Modellen zu gestalten, die wir während des
+                            Unterrichts erarbeitet haben – das Ergebnis ist auf dem rechten Bild zu sehen.
+                        </p>
+                        <p>
+                            Ein weiteres spannendes Fach war "Game Programming", in dem wir mit der Unreal Engine
+                            gearbeitet haben. Wir entwickelten zwei kleinere Projekte: Das erste war ein Handyspiel, bei
+                            dem wir freie Gestaltungsmöglichkeiten hatten. Das zweite Projekt war ein 2D-Platformer, den
+                            ich als 2,5D-Version umsetzte, da ich diese Technik schon immer ausprobieren wollte.
+                        </p>
+                    </td>
+                    <td>
+                        <img src="Education_FinalTask.png" style="height: 350px"/>
+                    </td>
+                </tr>
+            </table>
+
+
+            <table>
+                <tr>
+                    <td>
+                        <img src="Education_HackathonMasskotchen.jpg" style="height: 400px"/>
+                    </td>
+                    <td class="bild_left">
+                        <p>
+                            Während meines Auslandssemesters in Finnland hatte ich zudem die Gelegenheit, an einem
+                            Hackathon teilzunehmen, die ich gerne genutzt habe. Der Hackathon dauerte drei Tage, und ich
+                            arbeitete in einem Team mit großartigen Leuten, mit denen ich viel Spaß hatte. Auch wenn wir
+                            keine Platzierung erreichten, war die Erfahrung äußerst wertvoll und lehrreich.
+                        </p>
+                        <p>
+                            Unser Team entwickelte einen Prototyp für Menschen mit chronischen Schmerzen. Wir hatten die
+                            Idee, mithilfe von AR-Brillen eine gemeinsame Kochsession zu ermöglichen, sodass Betroffene
+                            sich weniger allein fühlen. Denn die beste Medizin gegen die Schmerzen sind, sich mit
+                            Freunden unterhalten und auch eine gesunde Ernährung. In der App können Nutzerinnen und
+                            Nutzer andere Personen mit ähnlichen Beschwerden finden und einen gemeinsamen Kochtermin
+                            vereinbaren. Detaillierte Informationen zu diesem Projekt sind ebenfalls auf meinem
+                            GitHub-Profil verfügbar.
+
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+            <img src="Education_HackathonCertificate.png"
+                 style="height: 800px; display: block; margin: 50px auto 50px; margin-top: 20px"/>
+
+            <table>
+                <tr>
+                    <td>
+                        <p>
+                            Zum Abschluss möchte ich noch von einer besonderen Reise berichten, die ich während meines
+                            Aufenthalts in Finnland unternommen habe. Die schönsten Momente dieser Zeit habe ich in Bildern festgehalten, die hier zu sehen sind.
+                        </p>
+
+
+
+                    </td>
+                </tr>
+            </table>
+
+            <div class="background_info" style="padding-top: 50px; padding-bottom: 80px">
+            <table>
+                <tr>
+                    <td>
+                        <h2>Stockholm</h2>
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td>
+                    <p>
+                        Ich hatte die Gelegenheit, nach Stockholm zu reisen – ein unvergessliches Erlebnis. Nach einer 12-stündigen Fahrt mit der Fähre kam ich in Stockholm an, und wir nutzten den ersten Tag, um die Stadt zu erkunden. Stockholm ist eine wunderschöne Stadt, die ich jedem wärmstens empfehlen kann. Natürlich durfte auch ein Besuch in einem IKEA nicht fehlen – das gehört einfach dazu. Ein besonderes Highlight war der Besuch des ABBA-Museums, eine Erfahrung, die ich nie vergessen werde. Dort hatte ich die einmalige Gelegenheit, live mit virtuellen ABBA-Mitgliedern auf der Bühne zu performen und noch viele weitere interaktive Erlebnisse zu genießen.</p>
+                    </p>
+                    </td>
+                </tr>
+            </table>
+
+            <table style="margin: 0 auto;">
+                <tr >
+                    <td style="text-align: center;">
+                        <img src="StockholmCity.jpg" style="width: 400px"/>
+                    </td>
+                    <td style="text-align: center;">
+                        <img src="Stockholm_IKEA.jpg" style="width: 400px"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <img src="StockholmGANG.jpg" style="width: 400px"/>
+                    </td>
+                    <td style="text-align: center;">
+                        <img src="Stockholm_AbbaMuseum_Sitting.jpg" style="width: 400px"/>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin-top: 80px">
+
+
+                <tr>
+                    <td >
+                        <h2>Finnland</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Gleichzeitig konnte ich die finnische Kultur intensiver erleben, als ich eine Reise nach Lappland unternahm. Das beeindruckendste Erlebnis war das persönliche Treffen mit dem echten Weihnachtsmann. Allerdings hätte ich in der abgelegenen Wildnis ein großes Problem gehabt, wenn ich gestrandet wäre. Daher habe ich einen intensiven Überlebenskurs absolviert, bei dem ich lernte, wie man Feuer macht, ein Zelt aufbaut und sogar angelt – auch wenn ich an dem Tag leider nichts gefangen habe.
+                        </p> <p>
+                        Zur Freude habe ich außerdem eine Schneewanderung bei minus 20 Grad unternommen, und wenn man genau auf dem Foto hinsieht, erkennt man sogar, dass meine Wimpern gefroren waren. Ein weiteres Highlight war eine Husky-Schlittenfahrt, die diesen unvergesslichen Ausflug perfekt abrundete.
+                    </p>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td style="text-align: center;">
+                        <img src="Finnland_SantaClause.JPG" style="height: 300px"/>
+                    </td>
+                    <td style="text-align: center;">
+                        <img src="Finnland_Schneewanderung.jpg" style="height: 300px"/>
+                    </td>
+                    <td style="text-align: center;">
+                        <img src="Finnland_ZeltBauen.jpg" style="height: 300px"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <img src="Finnland_Angeln.jpg" style="height: 400px"/>
+                    </td>
+                    <td style="text-align: center;">
+                        <img src="Finnland_Feuermachen.jpg" style="height: 400px"/>
+                    </td>
+                    <td style="text-align: center;">
+                        <img src="Finnland_HuskySchlittenFahrt.jpg" style="height: 400px"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
